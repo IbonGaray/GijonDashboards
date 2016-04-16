@@ -14,4 +14,6 @@ urlpatterns = [
 
 
     url(r'^gijon/ingresos/$', views.gijonIngresos, name='gijonIngresos'),
+
+    url(r'^gijon/mapa/$', views.gijonMapa, name='gijonMapa'),
 ]

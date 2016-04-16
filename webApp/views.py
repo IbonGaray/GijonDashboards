@@ -19,3 +19,5 @@ def gijonGastosPartida(request):
     return render(request, 'gijonGastosPartida.html', {})
 def gijonIngresos(request):
     return render(request, 'gijonIngresos.html', {})
+def gijonMapa(request):
+    return render(request, 'gijonMapa.html', {})

@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script>
-        $( document ).ready(function() {
-            $("#dos").toggleClass( "active" );
+        <script>$( document ).ready(function() {
+            $("#gijon").toggleClass( "active" );
+            $("#mapa").toggleClass( "active" );
         });</script>
     <title></title>
 </head>
 <body>
 {% include "navbar.html" %}
+{% include "menuGijon.html" %}
 
-{% include "tituloPagina.html" %}
+<iframe width="100%" height="520" frameborder="0" src="https://ibongaray.cartodb.com/viz/e0cd87ce-9ea2-11e5-b8a3-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
+</section>
 </body>
 </html>
