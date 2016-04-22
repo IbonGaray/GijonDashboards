@@ -9,29 +9,21 @@
     <script>$( document ).ready(function() {
             $("#gijon").toggleClass( "active" );
             $("#gastos").toggleClass( "active" );
-            $("#tiempoGastos").toggleClass( "active" );
-            $("#botonLeft").toggleClass( "active" );
+            $("#articulo").toggleClass( "active" );
         });</script>
-
     <title></title>
 </head>
 <body>
-{% include "navbar.html" %}
-{% include "menuGijon.html" %}
-<section>
+
+{% include "menus/menusSuperior.html" %}
+
+<section style="margin-top: 50px">
     <div class="col-md-2">
-{% include "menuLateralGijonGastos.html" %}
-        </div>
-<div class="col-md-10" align="right">
-    <div class="btn-group" role="group" aria-label="...">
-  <button id="botonLeft" type="button" class="btn btn-default">Left</button>
-  <button type="button" class="btn btn-default">Middle</button>
-  <button type="button" class="btn btn-default">Right</button>
+{% include "menus/menuLateralGijonGastos.html" %}
 </div>
-
-
-<iframe width=100% height="515" src="https://charts.qlikcloud.com/56d18bb5f6dc0f1000095f5b/chart.html" frameborder="0"></iframe>
+<div class="col-md-10">
 </div>
 </section>
+
 </body>
 </html>

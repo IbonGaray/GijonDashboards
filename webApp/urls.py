@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^gijon/gastos/articulo/$', views.gijonGastosArticulo, name='gijonGastosArticulo'),
     url(r'^gijon/gastos/partida/$', views.gijonGastosPartida, name='gijonGastosPartida'),
 
+    url(r'^gijon/demografia/$', views.gijonDemografia, name='gijonDemografia'),
 
     url(r'^gijon/ingresos/$', views.gijonIngresos, name='gijonIngresos'),
 
