@@ -17,4 +17,6 @@ urlpatterns = [
     url(r'^gijon/ingresos/$', views.gijonIngresos, name='gijonIngresos'),
 
     url(r'^gijon/mapa/$', views.gijonMapa, name='gijonMapa'),
+
+    url(r'^gijon/medioAmbiente/aire/$', views.gijonMedioAmbienteAireGeneral, name='gijonMedioAmbienteAireGeneral'),
 ]

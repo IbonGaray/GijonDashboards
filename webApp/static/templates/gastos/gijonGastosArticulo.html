@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    {% include "comun/importaciones.html" %}
+
+    <script>$( document ).ready(function() {
+            $("#gijon").toggleClass( "active" );
+            $("#gastos").toggleClass( "active" );
+            $("#articulo").toggleClass( "active" );
+        });</script>
+    <title></title>
+</head>
+<body>
+
+{% include "menus/menusSuperior.html" %}
+
+<section style="margin-top: 50px">
+    <div class="col-md-2">
+{% include "menus/menuLateralGijonGastos.html" %}
+</div>
+<div class="col-md-10">
+</div>
+</section>
+
+</body>
+</html>

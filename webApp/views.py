@@ -23,3 +23,5 @@ def gijonMapa(request):
     return render(request, 'mapas/gijonMapa.html', {})
 def gijonDemografia(request):
     return render(request, 'demografia/gijonDemografiaGeneral.html', {})
+def gijonMedioAmbienteAireGeneral(request):
+    return render(request, 'medioAmbiente/gijonMedioAmbienteAireGeneral.html', {})
