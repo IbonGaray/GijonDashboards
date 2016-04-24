@@ -1,37 +1,42 @@
-
-<nav class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="navigation" style="background: #dd251c;  background-color: #b62821; ">
+    {% load staticfiles %}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<nav class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="navigation" style="background: #333;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+
+      <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a id="uno" class="navbar-brand" href="/" style="color: #fffff6;">Gijón</a>
+
+      <a id="uno" class="navbar-brand" href="/" style="color: #fffff6;"><img src="{% static "img/logo_2013.png" %}" style="position: relative;
+  top: -50px;
+  left: 10px;
+  width: 200px;"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav" style="color: #fffff6;">
+      <ul class="nav navbar-nav">
 
           <li id="gastos"><a href="/gijon/gastos/tiempo/" style="color: #fffff6;">Gastos</a></li>
           <li id="ingresos"><a href="/gijon/ingresos/" style="color: #fffff6;">Ingresos</a></li>
           <li id="mapa"><a href="/gijon/mapa/" style="color: #fffff6;">Mapa</a></li>
           <li id="demografia"><a href="/gijon/demografia/" style="color: #fffff6;">Demografía</a></li>
+
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #fffff6;">Medio Ambiente<span class="caret"></span></a>
-          <ul class="dropdown-menu" style="background: #dd251c;">
-            <li id="medioAmbiente"><a href="/gijon/medioAmbiente/aire/" style="color: #fffff6;">Calidad Aire</a></li>
+          <ul class="dropdown-menu" style="background: #333;">
+              <li id="medioAmbiente"><a href="/gijon/medioAmbiente/aire/" style="color: #fffff6;">Calidad Aire</a></li>
               <li id="medioAmbiente2"><a href="/gijon/medioAmbiente/" style="color: #fffff6;">Action</a></li>
               <li id="medioAmbiente3"><a href="/gijon/medioAmbiente/" style="color: #fffff6;">Action</a></li>
-
           </ul>
-        </li>
-
+          </li>
       </ul>
-
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
