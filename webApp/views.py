@@ -61,4 +61,10 @@ def gijonMedioAmbienteAireMXIL(request):
 def gijonMedioAmbienteAirePM25(request):
     return render(request, 'medioAmbiente/gijonMedioAmbienteAirePM25.html', {})
 
+def gijonTarjetaCiudadana(request):
+    return render(request, 'tarjetaCiudadana/gijonTarjetaCiudadana.html', {})
+
+def gijonEnergiaAlumbradoPublico(request):
+    return render(request, 'energia/gijonEnergiaAlumbradoPublico.html', {})
+
 

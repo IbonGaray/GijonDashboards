@@ -3,7 +3,8 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^$', views.uno, name='uno'),
+    #url(r'^$', views.uno, name='uno'),
+    url(r'^$', views.gijonDemografia, name='gijonDemografia'),
     url(r'^santander/$', views.santander, name='santander'),
     url(r'^gijon/gastos/tiempo/$', views.gijonGastosTiempo, name='gijonGastosTiempo'),
     url(r'^gijon/gastos/economico/$', views.gijonGastosEconomico, name='gijonGastosEconomico'),
@@ -34,4 +35,8 @@ urlpatterns = [
     url(r'^gijon/medioAmbiente/aire/TOL/$', views.gijonMedioAmbienteAireTOL, name='gijonMedioAmbienteAireTOL'),
     url(r'^gijon/medioAmbiente/aire/MXIL/$', views.gijonMedioAmbienteAireMXIL, name='gijonMedioAmbienteAireMXIL'),
     url(r'^gijon/medioAmbiente/aire/PM25/$', views.gijonMedioAmbienteAirePM25, name='gijonMedioAmbienteAirePM25'),
+
+    url(r'^gijon/tarjetaCiudadana/$', views.gijonTarjetaCiudadana, name='tarjetaCiudadana'),
+
+    url(r'^gijon/energia/alumbradoPublico/$', views.gijonEnergiaAlumbradoPublico, name='gijonEnergiaAlumbradoPublico'),
 ]
