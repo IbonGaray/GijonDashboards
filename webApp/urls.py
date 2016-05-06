@@ -39,4 +39,8 @@ urlpatterns = [
     url(r'^gijon/tarjetaCiudadana/$', views.gijonTarjetaCiudadana, name='tarjetaCiudadana'),
 
     url(r'^gijon/energia/alumbradoPublico/$', views.gijonEnergiaAlumbradoPublico, name='gijonEnergiaAlumbradoPublico'),
+
+    url(r'^gijon/sociedad/usoCajeros/$', views.gijonSociedadUsoCajeros, name='gijonSociedadUsoCajeros'),
+
+    url(r'^gijon/economia/presupuestos/gastos/$', views.gijonEconomiaPresupuestosGastos, name='gijonEconomiaPresupuestosGastos'),
 ]

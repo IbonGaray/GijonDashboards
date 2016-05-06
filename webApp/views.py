@@ -67,4 +67,10 @@ def gijonTarjetaCiudadana(request):
 def gijonEnergiaAlumbradoPublico(request):
     return render(request, 'energia/gijonEnergiaAlumbradoPublico.html', {})
 
+def gijonSociedadUsoCajeros(request):
+    return render(request, 'sociedad/gijonSociedadUsoCajeros.html', {})
+
+def gijonEconomiaPresupuestosGastos(request):
+    return render(request, 'economia/gijonEconomiaPresupuestosGastos.html', {})
+
 
