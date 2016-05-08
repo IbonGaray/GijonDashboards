@@ -3,6 +3,11 @@ from . import views
 
 
 urlpatterns = [
+
+    url(r'^404/$', views.error404, name='error404'),
+
+    url(r'^gijon/500/$', views.error500, name='error500'),
+
     #url(r'^$', views.uno, name='uno'),
     url(r'^$', views.gijonDemografia, name='gijonDemografia'),
     url(r'^santander/$', views.santander, name='santander'),
