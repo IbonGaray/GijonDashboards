@@ -1,12 +1,13 @@
 from django.conf.urls import url
 from . import views
+from django.contrib.auth.views import login, logout
 
 
 urlpatterns = [
 
     url(r'^404/$', views.error404, name='error404'),
 
-    url(r'^gijon/500/$', views.error500, name='error500'),
+    url(r'^500/$', views.error500, name='error500'),
 
     #url(r'^$', views.uno, name='uno'),
     url(r'^$', views.gijonDemografia, name='gijonDemografia'),
@@ -48,4 +49,8 @@ urlpatterns = [
     url(r'^gijon/sociedad/usoCajeros/$', views.gijonSociedadUsoCajeros, name='gijonSociedadUsoCajeros'),
 
     url(r'^gijon/economia/presupuestos/gastos/$', views.gijonEconomiaPresupuestosGastos, name='gijonEconomiaPresupuestosGastos'),
+    url(r'^gijon/economia/presupuestos/ingresos/$', views.gijonEconomiaPresupuestosIngresos, name='gijonEconomiaPresupuestosIngresos'),
+
+    url(r'^pruebas/$', views.pruebas, name='pruebas'),
+
 ]

@@ -1,4 +1,10 @@
 from django.shortcuts import render
+from django.contrib import auth
+from django.http import HttpResponseRedirect
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth.decorators import login_required
 
 def error404(request):
     return render(request, '404.html', {})
@@ -76,5 +82,10 @@ def gijonSociedadUsoCajeros(request):
 
 def gijonEconomiaPresupuestosGastos(request):
     return render(request, 'economia/gijonEconomiaPresupuestosGastos.html', {})
+def gijonEconomiaPresupuestosIngresos(request):
+    return render(request, 'economia/gijonEconomiaPresupuestosIngresos.html', {})
 
+#Gestion usuarios
+def pruebas(request):
+     return render(request, 'usuarios/nuevoUsuario.html', {})
 
