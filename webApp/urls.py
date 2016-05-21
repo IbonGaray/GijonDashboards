@@ -51,6 +51,15 @@ urlpatterns = [
     url(r'^gijon/economia/presupuestos/gastos/$', views.gijonEconomiaPresupuestosGastos, name='gijonEconomiaPresupuestosGastos'),
     url(r'^gijon/economia/presupuestos/ingresos/$', views.gijonEconomiaPresupuestosIngresos, name='gijonEconomiaPresupuestosIngresos'),
 
+    url(r'^gijon/elecciones/$', views.gijonElecciones, name='gijonElecciones'),
+
+    url(r'^gijon/empleadosPublicos/antiguedad/$', views.gijonEmpleadosPublicosAntiguedad, name='gijonEmpleadosPublicosAntiguedad'),
+    url(r'^gijon/empleadosPublicos/sexo/', views.gijonEmpleadosPublicosSexo, name='gijonEmpleadosPublicosSexo'),
+    url(r'^gijon/empleadosPublicos/edad/', views.gijonEmpleadosPublicosEdad, name='gijonEmpleadosPublicosEdad'),
+    url(r'^gijon/empleadosPublicos/grupoNivel/', views.gijonEmpleadosPublicosGrupoNivel, name='gijonEmpleadosPublicosGrupoNivel'),
+    url(r'^gijon/empleadosPublicos/regimenJuridico/', views.gijonEmpleadosPublicosRegimenJuridico, name='gijonEmpleadosPublicosRegimenJuridico'),
+    url(r'^gijon/empleadosPublicos/relacion/', views.gijonEmpleadosPublicosRelacion, name='gijonEmpleadosPublicosRelacion'),
+
     url(r'^pruebas/$', views.pruebas, name='pruebas'),
 
 ]

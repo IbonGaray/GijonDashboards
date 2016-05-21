@@ -85,6 +85,22 @@ def gijonEconomiaPresupuestosGastos(request):
 def gijonEconomiaPresupuestosIngresos(request):
     return render(request, 'economia/gijonEconomiaPresupuestosIngresos.html', {})
 
+def gijonElecciones(request):
+    return render(request, 'sectorPublico/gijonElecciones.html', {})
+
+def gijonEmpleadosPublicosAntiguedad(request):
+    return render(request, 'sectorPublico/gijonEmpleadosPublicosAntiguedad.html', {})
+def gijonEmpleadosPublicosSexo(request):
+    return render(request, 'sectorPublico/gijonEmpleadosPublicosSexo.html', {})
+def gijonEmpleadosPublicosEdad(request):
+    return render(request, 'sectorPublico/gijonEmpleadosPublicosEdad.html', {})
+def gijonEmpleadosPublicosGrupoNivel(request):
+    return render(request, 'sectorPublico/gijonEmpleadosPublicosGrupoNivel.html', {})
+def gijonEmpleadosPublicosRegimenJuridico(request):
+    return render(request, 'sectorPublico/gijonEmpleadosPublicosRegimenJuridico.html', {})
+def gijonEmpleadosPublicosRelacion(request):
+    return render(request, 'sectorPublico/gijonEmpleadosPublicosRelacion.html', {})
+
 #Gestion usuarios
 def pruebas(request):
      return render(request, 'usuarios/nuevoUsuario.html', {})
