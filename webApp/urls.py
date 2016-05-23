@@ -59,6 +59,7 @@ urlpatterns = [
     url(r'^gijon/empleadosPublicos/grupoNivel/', views.gijonEmpleadosPublicosGrupoNivel, name='gijonEmpleadosPublicosGrupoNivel'),
     url(r'^gijon/empleadosPublicos/regimenJuridico/', views.gijonEmpleadosPublicosRegimenJuridico, name='gijonEmpleadosPublicosRegimenJuridico'),
     url(r'^gijon/empleadosPublicos/relacion/', views.gijonEmpleadosPublicosRelacion, name='gijonEmpleadosPublicosRelacion'),
+    url(r'^gijon/sociedad/reclamacionesSujerencias/', views.gijonReclamacionesSujerencias, name='gijonReclamacionesSujerencias'),
 
     url(r'^pruebas/$', views.pruebas, name='pruebas'),
 

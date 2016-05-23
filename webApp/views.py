@@ -100,6 +100,8 @@ def gijonEmpleadosPublicosRegimenJuridico(request):
     return render(request, 'sectorPublico/gijonEmpleadosPublicosRegimenJuridico.html', {})
 def gijonEmpleadosPublicosRelacion(request):
     return render(request, 'sectorPublico/gijonEmpleadosPublicosRelacion.html', {})
+def gijonReclamacionesSujerencias(request):
+    return render(request, 'sectorPublico/gijonReclamacionesSujerencias.html', {})
 
 #Gestion usuarios
 def pruebas(request):
