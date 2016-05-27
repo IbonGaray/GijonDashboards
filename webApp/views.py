@@ -11,6 +11,9 @@ def error404(request):
 def error500(request):
     return render(request, '500.html', {})
 
+def gijonInicio(request):
+    return render(request, 'inicio.html', {})
+
 def uno(request):
     return render(request, 'uno.html', {})
 def santander(request):

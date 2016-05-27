@@ -9,8 +9,10 @@ urlpatterns = [
 
     url(r'^500/$', views.error500, name='error500'),
 
+    url(r'^inicio/$', views.gijonInicio, name='gijonInicio'),
+
     #url(r'^$', views.uno, name='uno'),
-    url(r'^$', views.gijonDemografia, name='gijonDemografia'),
+    url(r'^$', views.gijonInicio, name='gijonInicio'),
     url(r'^santander/$', views.santander, name='santander'),
     url(r'^gijon/gastos/tiempo/$', views.gijonGastosTiempo, name='gijonGastosTiempo'),
     url(r'^gijon/gastos/economico/$', views.gijonGastosEconomico, name='gijonGastosEconomico'),
