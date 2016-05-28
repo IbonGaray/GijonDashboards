@@ -172,6 +172,9 @@ def gijonEmpleadosPublicosRelacion(request):
 def gijonReclamacionesSujerencias(request):
     return render(request, 'sectorPublico/gijonReclamacionesSujerencias.html', {})
 
+def gijonRSS(request):
+    return render(request, 'gijonRSS.html', {})
+
 
 # Gestion usuarios
 def pruebas(request):

@@ -69,6 +69,8 @@ urlpatterns = [
     url(r'^gijon/sociedad/reclamacionesSujerencias/', views.gijonReclamacionesSujerencias,
         name='gijonReclamacionesSujerencias'),
 
+    url(r'^gijon/rss/$', views.gijonRSS, name='RSS'),
+
     url(r'^pruebas/$', views.pruebas, name='pruebas'),
 
 ]
