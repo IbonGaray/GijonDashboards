@@ -5,22 +5,23 @@
 
     {% include "comun/importaciones.html" %}
 
-    <script>$( document ).ready(function() {
-            $("#gijon").toggleClass( "active" );
-            $("#gastos").toggleClass( "active" );
-            $("#funcional").toggleClass( "active" );
-        });</script>
+    <script>$(document).ready(function () {
+        $("#gijon").toggleClass("active");
+        $("#gastos").toggleClass("active");
+        $("#funcional").toggleClass("active");
+    });</script>
     <title></title>
 </head>
 <body>
 {% include "menus/menusSuperior.html" %}
 <section>
     <div class="col-md-2">
-{% include "menus/menuLateralGijonGastos.html" %}
-        </div>
-<div class="col-md-10">
-<iframe width=100% height="515" src="https://charts.qlikcloud.com/56d18feff6dc0f1000095f5e/chart.html" frameborder="0"></iframe>
-</div>
+        {% include "menus/menuLateralGijonGastos.html" %}
+    </div>
+    <div class="col-md-10">
+        <iframe width=100% height="515" src="https://charts.qlikcloud.com/56d18feff6dc0f1000095f5e/chart.html"
+                frameborder="0"></iframe>
+    </div>
 </section>
 {% include "menus/firma.html" %}
 </body>

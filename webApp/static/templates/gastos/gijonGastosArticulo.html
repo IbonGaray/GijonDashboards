@@ -5,11 +5,11 @@
 
     {% include "comun/importaciones.html" %}
 
-    <script>$( document ).ready(function() {
-            $("#gijon").toggleClass( "active" );
-            $("#gastos").toggleClass( "active" );
-            $("#articulo").toggleClass( "active" );
-        });</script>
+    <script>$(document).ready(function () {
+        $("#gijon").toggleClass("active");
+        $("#gastos").toggleClass("active");
+        $("#articulo").toggleClass("active");
+    });</script>
     <title></title>
 </head>
 <body>
@@ -18,10 +18,10 @@
 
 <section style="margin-top: 50px">
     <div class="col-md-2">
-{% include "menus/menuLateralGijonGastos.html" %}
-</div>
-<div class="col-md-10">
-</div>
+        {% include "menus/menuLateralGijonGastos.html" %}
+    </div>
+    <div class="col-md-10">
+    </div>
 </section>
 {% include "menus/firma.html" %}
 </body>

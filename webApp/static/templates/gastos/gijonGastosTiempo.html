@@ -5,12 +5,12 @@
 
     {% include "comun/importaciones.html" %}
 
-    <script>$( document ).ready(function() {
-            $("#gijon").toggleClass( "active" );
-            $("#gastos").toggleClass( "active" );
-            $("#tiempoGastos").toggleClass( "active" );
-            $("#botonLeft").toggleClass( "active" );
-        });</script>
+    <script>$(document).ready(function () {
+        $("#gijon").toggleClass("active");
+        $("#gastos").toggleClass("active");
+        $("#tiempoGastos").toggleClass("active");
+        $("#botonLeft").toggleClass("active");
+    });</script>
 
     <title></title>
 </head>
@@ -18,19 +18,19 @@
 {% include "menus/menusSuperior.html" %}
 <section>
     <div class="col-md-2">
-{% include "menus/menuLateralGijonGastos.html" %}
+        {% include "menus/menuLateralGijonGastos.html" %}
+    </div>
+    <div class="col-md-10" align="right">
+        <div class="btn-group" role="group" aria-label="...">
+            <button id="botonLeft" type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-default">Middle</button>
+            <button type="button" class="btn btn-default">Right</button>
         </div>
-<div class="col-md-10" align="right">
-    <div class="btn-group" role="group" aria-label="...">
-  <button id="botonLeft" type="button" class="btn btn-default">Left</button>
-  <button type="button" class="btn btn-default">Middle</button>
-  <button type="button" class="btn btn-default">Right</button>
-</div>
 
 
-
-<iframe width=100% height="515" src="https://charts.qlikcloud.com/56d18bb5f6dc0f1000095f5b/chart.html" frameborder="0"></iframe>
-</div>
+        <iframe width=100% height="515" src="https://charts.qlikcloud.com/56d18bb5f6dc0f1000095f5b/chart.html"
+                frameborder="0"></iframe>
+    </div>
 </section>
 {% include "menus/firma.html" %}
 </body>

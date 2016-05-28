@@ -1,7 +1,6 @@
 from django.conf.urls import url
-from . import views
-from django.contrib.auth.views import login, logout
 
+from . import views
 
 urlpatterns = [
 
@@ -11,7 +10,7 @@ urlpatterns = [
 
     url(r'^inicio/$', views.gijonInicio, name='gijonInicio'),
 
-    #url(r'^$', views.uno, name='uno'),
+    # url(r'^$', views.uno, name='uno'),
     url(r'^$', views.gijonInicio, name='gijonInicio'),
     url(r'^santander/$', views.santander, name='santander'),
     url(r'^gijon/gastos/tiempo/$', views.gijonGastosTiempo, name='gijonGastosTiempo'),
@@ -50,18 +49,25 @@ urlpatterns = [
 
     url(r'^gijon/sociedad/usoCajeros/$', views.gijonSociedadUsoCajeros, name='gijonSociedadUsoCajeros'),
 
-    url(r'^gijon/economia/presupuestos/gastos/$', views.gijonEconomiaPresupuestosGastos, name='gijonEconomiaPresupuestosGastos'),
-    url(r'^gijon/economia/presupuestos/ingresos/$', views.gijonEconomiaPresupuestosIngresos, name='gijonEconomiaPresupuestosIngresos'),
+    url(r'^gijon/economia/presupuestos/gastos/$', views.gijonEconomiaPresupuestosGastos,
+        name='gijonEconomiaPresupuestosGastos'),
+    url(r'^gijon/economia/presupuestos/ingresos/$', views.gijonEconomiaPresupuestosIngresos,
+        name='gijonEconomiaPresupuestosIngresos'),
 
     url(r'^gijon/elecciones/$', views.gijonElecciones, name='gijonElecciones'),
 
-    url(r'^gijon/empleadosPublicos/antiguedad/$', views.gijonEmpleadosPublicosAntiguedad, name='gijonEmpleadosPublicosAntiguedad'),
+    url(r'^gijon/empleadosPublicos/antiguedad/$', views.gijonEmpleadosPublicosAntiguedad,
+        name='gijonEmpleadosPublicosAntiguedad'),
     url(r'^gijon/empleadosPublicos/sexo/', views.gijonEmpleadosPublicosSexo, name='gijonEmpleadosPublicosSexo'),
     url(r'^gijon/empleadosPublicos/edad/', views.gijonEmpleadosPublicosEdad, name='gijonEmpleadosPublicosEdad'),
-    url(r'^gijon/empleadosPublicos/grupoNivel/', views.gijonEmpleadosPublicosGrupoNivel, name='gijonEmpleadosPublicosGrupoNivel'),
-    url(r'^gijon/empleadosPublicos/regimenJuridico/', views.gijonEmpleadosPublicosRegimenJuridico, name='gijonEmpleadosPublicosRegimenJuridico'),
-    url(r'^gijon/empleadosPublicos/relacion/', views.gijonEmpleadosPublicosRelacion, name='gijonEmpleadosPublicosRelacion'),
-    url(r'^gijon/sociedad/reclamacionesSujerencias/', views.gijonReclamacionesSujerencias, name='gijonReclamacionesSujerencias'),
+    url(r'^gijon/empleadosPublicos/grupoNivel/', views.gijonEmpleadosPublicosGrupoNivel,
+        name='gijonEmpleadosPublicosGrupoNivel'),
+    url(r'^gijon/empleadosPublicos/regimenJuridico/', views.gijonEmpleadosPublicosRegimenJuridico,
+        name='gijonEmpleadosPublicosRegimenJuridico'),
+    url(r'^gijon/empleadosPublicos/relacion/', views.gijonEmpleadosPublicosRelacion,
+        name='gijonEmpleadosPublicosRelacion'),
+    url(r'^gijon/sociedad/reclamacionesSujerencias/', views.gijonReclamacionesSujerencias,
+        name='gijonReclamacionesSujerencias'),
 
     url(r'^pruebas/$', views.pruebas, name='pruebas'),
 
