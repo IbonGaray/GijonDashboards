@@ -66,8 +66,8 @@ urlpatterns = [
         name='gijonEmpleadosPublicosRegimenJuridico'),
     url(r'^gijon/empleadosPublicos/relacion/', views.gijonEmpleadosPublicosRelacion,
         name='gijonEmpleadosPublicosRelacion'),
-    url(r'^gijon/sociedad/reclamacionesSujerencias/', views.gijonReclamacionesSujerencias,
-        name='gijonReclamacionesSujerencias'),
+    url(r'^gijon/sociedad/reclamacionesSugerencias/', views.gijonReclamacionesSugerencias,
+        name='gijonReclamacionesSugerencias'),
 
     url(r'^gijon/rss/$', views.gijonRSS, name='RSS'),
 
