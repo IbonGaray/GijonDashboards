@@ -4,11 +4,13 @@ from . import views
 
 urlpatterns = [
 
+    url(r'^principal/$', views.principal, name='principal'),
+
     url(r'^404/$', views.error404, name='error404'),
 
     url(r'^500/$', views.error500, name='error500'),
 
-    url(r'^inicio/$', views.gijonInicio, name='gijonInicio'),
+    url(r'^gijon/inicio/$', views.gijonInicio, name='gijonInicio'),
 
     # url(r'^$', views.uno, name='uno'),
     url(r'^$', views.gijonInicio, name='gijonInicio'),

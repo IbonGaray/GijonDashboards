@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+def principal(request):
+    return render(request, 'principal.html', {})
 
 def error404(request):
     return render(request, '404.html', {})
@@ -10,7 +12,7 @@ def error500(request):
 
 
 def gijonInicio(request):
-    return render(request, 'inicio.html', {})
+    return render(request, 'gijonInicio.html', {})
 
 
 def uno(request):
